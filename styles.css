@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+    --font-size: 14px;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+
+    /* Paleta de colores oficial del Manual de Marca Hermanos Jota */
+    --brand-siena-tostado: #A0522D;
+    /* Color principal de marca, títulos principales */
+    --brand-verde-salvia: #87A96B;
+    /* Acento secundario, sustentabilidad */
+    --brand-alabastro-calido: #F5E6D3;
+    /* Fondos principales, fotografía */
+    --brand-vara-de-oro: #D4A437;
+    /* Detalles premium, acentos */
+    --brand-rosa-polvoriento: #C47A6D;
+    /* Acentos suaves, detalles femeninos */
+    --brand-color-texto-gris: #6B6B6B;
+}
+
+body {
+    font-family: var(--font-sans);
+    background: linear-gradient(44deg, #F5E6D3 50%, #FFFFFF 100%);
+    font-size: var(--font-size);
+    color: var(--brand-color-texto-gris);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: var(--font-serif);
+    color: black;
+    font-size: 31px;
+    font-style: normal; /* Esto es lo correcto */
+    font-weight: 400;   /* Opcional: peso regular */
+}
+
+h2 {
+    font-family: var(--font-sans);
+    color: var(--brand-verde-salvia);
+    font-size: 12px;
+    font-style: light;
+}
+
+.placas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.placa {
+    background: white;
+    border-radius: 10px;
+    border: #a0512d7e 1px solid;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 180px;
+    height: auto;
+    font-size: 12px;
+}
+
+.placa h2 {
+    font-size: 15px;
+    color: black;
+    font-style: normal; /* Esto es lo correcto */
+    font-weight: 400;   /* Opcional: peso regular */
+}
+
+.placa h3 {
+    font-size: 17px;
+}
+
+.placa img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.placa button {
+    margin-top: 12px;
+    padding: 8px 18px;
+    background: var(--brand-siena-tostado);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: var(--font-sans);
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.placa button:hover {
+    background: var(--brand-siena-tostado);
+}
+
+.btn-coleccion {
+    padding: 8px 2rem;
+    background: white;
+    color: var(--brand-siena-tostado);
+    border: var(--brand-siena-tostado) 1px solid;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: var(--font-sans);
+    cursor: pointer;
+    transition: background 0.2s;
+    width: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coleccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+}
+
+.placas-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.placa1 {
+    background: white;
+    border-radius: 10px;
+    border: #a0512d7e 1px solid;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17rem;
+    height: auto;
+    font-size: 12px;
+    position: relative;
+}
+
+.placa1 .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--brand-verde-salvia);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placa1 .circle2 {
+    background: var(--brand-vara-de-oro);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placa1 .circle3 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--brand-rosa-polvoriento);
+}
+
+.placas-info h1 {
+    font-size: 15px;
+    color: black;
+    font-style: normal; /* Esto es lo correcto */
+    font-weight: 400;   /* Opcional: peso regular */
+}
+
+.placas-info p {
+    font-family: var(--font-sans);
+    text-align: center;
+}
