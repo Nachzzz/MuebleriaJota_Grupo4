@@ -25,11 +25,12 @@ Proyecto web para la presentación de la colección actual de Mueblería Jota He
 3. Asegúrate de tener las imágenes en la carpeta `/img`.
 4. Abre `index.html` en tu navegador.
 
-## Personalización
+## Tecnologías
 
-- Cambia las imágenes en la carpeta `/img` para actualizar los productos.
-- Modifica los textos y valores en `index.html` según tus necesidades.
-- Ajusta los estilos en `styles.css` para adaptar la identidad visual.
+- HTML
+- CSS
+- JavaScript
+
 
 ## Créditos
 
