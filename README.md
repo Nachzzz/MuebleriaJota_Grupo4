@@ -20,11 +20,6 @@ Proyecto web para la presentación de la colección actual de Mueblería Jota He
 
 ## Instalación
 
-1. Clona este repositorio.
-2. Abre la carpeta en VS Code.
-3. Asegúrate de tener las imágenes en la carpeta `/img`.
-4. Abre `index.html` en tu navegador.
-
 ## Tecnologías
 
 - HTML
@@ -34,5 +29,4 @@ Proyecto web para la presentación de la colección actual de Mueblería Jota He
 
 ## Créditos
 
-Grupo 4 - Proyecto Mueblería Jota Hnos  
-Manual de Marca
+Grupo 4 - Proyecto Mueblería Jota Hnos
