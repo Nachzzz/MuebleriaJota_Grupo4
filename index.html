@@ -1,73 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muebleria Jota Hnos</title>
+    <title>Mueblería Jota Hnos</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <h2>CADA PIEZA CUENTA UNA HISTORIA</h2>
-    <h1>Colección Actual</h1>
-    <p>Descubrir la calidez del optimismo de los años 60 se encuentra con la conciencia de la sustentabilidad del 2025
-        en cada pieza única.</p>
-    <div class="placas-container">
-        <div class="placa">
-            <p>4.9</p>
-            <img src="assets/img/img1.png" alt="Placa 1">
-            <h2>Mesa Comedor Pampa</h2>
-            <p>Descripción de la placa 1.</p>
-            <h3>$125.000</h3>
-            <button>Ver Detalles</button>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/img/logo.svg" alt="Logo Mueblería Jota Hnos">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li>
+                    <button class="carrito">
+                        <img src="assets/img/carrito.svg" alt="carrito">
+                        <a href="#">Carrito</a>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-banner">
+            <div class="info_hero">
+                <h2>EL REDESCUBRIMIENTO DE UN ARTE OLVIDADO</h2>
+                <h1>Muebles que <br><span style="color:#A0522D ;">Alimentan el alma</span></h1>
+                <p>Existimos en la intersección entre herencia e innovación,<br>
+                    donde la calidez del optimismo de los años 60 se encuentra<br>
+                    con la conciencia de la sustentabilidad del 2025.</p>
+                <button class="btn-hero">Descubrir Colección</button>
+                <button class="btn-hero1">Nuestra Historia</button>
+                <div class="info_hero2">
+                    <div class="info_hero2-item fsc">
+                        <h2>FSC</h2>
+                        <p>Certificado</p>
+                    </div>
+                    <div class="info_hero2-item reciclado">
+                        <h2>30%</h2>
+                        <p>Materiales Reciclados</p>
+                    </div>
+                    <div class="info_hero2-item garantia">
+                        <h2>10</h2>
+                        <p>Garantía</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos Destacados -->
+        <section class="productos-destacados">
+            <div class="info_productos">
+                <h2>CADA PIEZA CUENTA UNA HISTORIA</h2>
+                <h1 class="col_actual">Colección Actual</h1>
+                <p>
+                    Descubrir la calidez del optimismo de los años 60 se encuentra con la conciencia de la
+                    sustentabilidad del 2025 en cada pieza única.
+                </p>
+
+            </div>
+            <div class="placas-container">
+                <div class="placa">
+                    <p>4.9</p>
+                    <img src="assets/img/img1.png" alt="Mesa Comedor Pampa">
+                    <h2>Mesa Comedor Pampa</h2>
+                    <p>Descripción de la placa 1.</p>
+                    <h3>$125.000</h3>
+                    <button>Ver Detalles</button>
+                </div>
+                <div class="placa">
+                    <p>4.9</p>
+                    <img src="assets/img/img8.png" alt="Mesa Comedor Pampa">
+                    <h2>Mesa Comedor Pampa</h2>
+                    <p>Descripción de la placa 2.</p>
+                    <h3>$125.000</h3>
+                    <button>Ver Detalles</button>
+                </div>
+                <div class="placa">
+                    <p>4.9</p>
+                    <img src="assets/img/img3.png" alt="Mesa Comedor Pampa">
+                    <h2>Mesa Comedor Pampa</h2>
+                    <p>Descripción de la placa 3.</p>
+                    <h3>$125.000</h3>
+                    <button>Ver Detalles</button>
+                </div>
+                <div class="placa">
+                    <p>4.9</p>
+                    <img src="assets/img/img2.png" alt="Mesa Comedor Pampa">
+                    <h2>Mesa Comedor Pampa</h2>
+                    <p>Descripción de la placa 4.</p>
+                    <h3>$125.000</h3>
+                    <button>Ver Detalles</button>
+                </div>
+            </div>
+            <div class="coleccion">
+                <button class="btn-coleccion">Explorar Toda la Colección</button>
+            </div>
+        </section>
+
+        <!-- Valores de la Marca / Info -->
+        <section class="valores-marca">
+            <div class="placas-info">
+                <div class="placa1">
+                    <div class="circle">🌱</div>
+                    <h1>Sustentabilidad</h1>
+                    <p>Madera ESC certificada de bosques responsables argentinos</p>
+                </div>
+                <div class="placa1">
+                    <div class="circle2">🏆</div>
+                    <h1>Programa Herencia Viva</h1>
+                    <p>Garantía extendida y servicio de restauración incluido</p>
+                </div>
+                <div class="placa1">
+                    <div class="circle3">🤝</div>
+                    <h1>Artesanía Local</h1>
+                    <p>Proveedores locales del Gran Buenos Aires únicamente</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Mueblería Jota Hermanos. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+            </ul>
         </div>
-        <div class="placa">
-            <p>4.9</p>
-            <img src="assets/img/img8.png" alt="Placa 1">
-            <h2>Mesa Comedor Pampa</h2>
-            <p>Descripción de la placa 1.</p>
-            <h3>$125.000</h3>
-            <button>Ver Detalles</button>
-        </div>
-        <div class="placa">
-            <p>4.9</p>
-            <img src="assets/img/img3.png" alt="Placa 1">
-            <h2>Mesa Comedor Pampa</h2>
-            <p>Descripción de la placa 1.</p>
-            <h3>$125.000</h3>
-            <button>Ver Detalles</button>
-        </div>
-        <div class="placa">
-            <p>4.9</p>
-            <img src="assets/img/img2.png" alt="Placa 1">
-            <h2>Mesa Comedor Pampa</h2>
-            <p>Descripción de la placa 1.</p>
-            <h3>$125.000</h3>
-            <button>Ver Detalles</button>
-        </div>
-    </div>
-    <div class="coleccion">
-        <button class="btn-coleccion">Explorar Toda la Coleccion</button>
-    </div>
-    <div class="placas-info">
-        <div class="placa1">
-            <div class="circle">🌱</div>
-            <h1>Sustentabilidad</h1>
-            <p>Madera ESC certificada de bosques responsables argentinos</p>
-        </div>
-        <div class="placa1">
-            <div class="circle2">🏆</div>
-            <h1>Programa Herencia Viva</h1>
-            <p>Garantía extendida y servicio de restauración incluido</p>
-        </div>
-        <div class="placa1">
-            <div class="circle3">🤝</div>
-            <h1>Artesanía Local</h1>
-            <p>Proveedores locales del Gran Buenos Aires únicamente</p>
-        </div>
-    </div>
-    <footer></footer>
+    </footer>
 </body>
 
 </html>
