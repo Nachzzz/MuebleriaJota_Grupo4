@@ -72,7 +72,7 @@ header ul li a{
 
 body {
     font-family: var(--font-sans);
-    background: linear-gradient(44deg, #F5E6D3 50%, #FFFFFF 100%);
+    background: linear-gradient(290deg, #F5E6D3 0%, #FFFFFF 50%, #F5E6D3 100%);
     font-size: var(--font-size);
     color: var(--brand-color-texto-gris);
     display: flex;
@@ -83,10 +83,127 @@ body {
     margin: 0;
 }
 
+/* MOBILE FIRST: estilos base ya aplican para mobile.
+   Ahora agregamos mejoras para pantallas pequeñas y luego escalamos para desktop. */
+
+/* Ajustes generales para mobile */
+body {
+    font-size: 15px;
+    padding: 0 8px;
+}
+
+h2 {
+    font-size: 13px;
+}
+
+.placas-container {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.placa {
+    width: 100%;
+    max-width: 320px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.placa img {
+    height: 160px;
+}
+
+.coleccion {
+    height: auto;
+    margin: 32px 0;
+}
+
+.btn-coleccion {
+    width: 100%;
+    max-width: 320px;
+    font-size: 16px;
+}
+
+.placas-info {
+    flex-direction: column;
+    gap: 20px;
+    margin: 32px 0;
+    width: 100%;
+}
+
+.placa1 {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.info_productos {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Desktop: 768px en adelante */
+@media (min-width: 768px) {
+    body {
+        font-size: var(--font-size);
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 31px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    .placas-container {
+        flex-direction: row;
+        gap: 32px;
+        margin-top: 32px;
+        width: auto;
+    }
+
+    .placa {
+        width: 180px;
+        max-width: none;
+        align-items: flex-start;
+    }
+
+    .placa img {
+        height: auto;
+    }
+
+    .coleccion {
+        height: 16rem;
+        margin: 0;
+    }
+
+    .btn-coleccion {
+        width: auto;
+        max-width: none;
+        font-size: 14px;
+    }
+
+    .placas-info {
+        flex-direction: row;
+        gap: 1rem;
+        margin: 0;
+        width: auto;
+    }
+
+    .placa1 {
+        width: 17rem;
+        max-width: none;
+        margin: 0;
+    }
+}
+
 h1 {
     font-family: var(--font-serif);
     color: black;
-    font-size: 31px;
+    font-size: 52px;
     font-style: normal; /* Esto es lo correcto */
     font-weight: 400;   /* Opcional: peso regular */
 }
@@ -183,6 +300,10 @@ h2 {
     height: 16rem;
 }
 
+.col_actual{
+    font-size: 31px;
+}
+
 .placas-info{
     display: flex;
     flex-direction: row;
@@ -249,5 +370,343 @@ h2 {
     text-align: center;
 }
 
+/* Navbar estilos base */
+header {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 12px 0 rgba(160, 81, 45, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 32px;
+    background: transparent;
+    min-height: 60px;
+}
+
+.logo img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--brand-color-texto-gris);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+
+/* Ejemplo de botón carrito */
+.nav-links .carrito-btn {
+    border: 1px solid var(--brand-siena-tostado);
+    color: var(--brand-siena-tostado);
+    background: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.nav-links .carrito-btn:hover {
+    background: var(--brand-siena-tostado);
+    color: #fff;
+    border-color: var(--brand-siena-tostado);
+}
+
+.carrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: 1px solid var(--brand-siena-tostado);
+    color: var(--brand-siena-tostado);
+    background: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.carrito img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    transition: filter 0.2s;
+}
+
+.carrito a {
+    color: var(--brand-siena-tostado);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0;
+}
+
+.carrito:hover {
+    background: var(--brand-siena-tostado);
+    color: #fff;
+    border-color: var(--brand-siena-tostado);
+}
+
+.carrito:hover img {
+    content: url("../assets/img/carrito_blanco.svg");
+}
+
+.carrito:hover a {
+    color: #fff;
+}
+
+/* Responsive navbar para mobile */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 8px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        margin-top: 8px;
+    }
+    .nav-links li {
+        width: 100%;
+    }
+    .nav-links a,
+    .nav-links .carrito-btn {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Hero Banner */
+
+/* .hero-banner {
+    width: 100vw;
+    min-height: 60vh;
+    background: linear-gradient(44deg, #F5E6D3 0%, #FFFFFF 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+} */
+
+.info_hero {
+    width: 100%;
+    height: 60vh;
+    background-image: url('../assets/img/hero-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info_hero2 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 48px;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.info_hero2-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90px;
+}
+
+.info_hero2-item h2 {
+    margin: 0;
+    font-size: 28px;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.info_hero2-item p {
+    margin: 0;
+    font-size: 15px;
+    font-family: var(--font-sans);
+    color: #6B6B6B;
+    font-weight: 400;
+    margin-top: 4px;
+    text-align: center;
+}
+
+/* Colores personalizados para cada item */
+.info_hero2-item.fsc h2 {
+    color: var(--brand-siena-tostado);
+}
+.info_hero2-item.reciclado h2 {
+    color: var(--brand-verde-salvia);
+}
+.info_hero2-item.garantia h2 {
+    color: var(--brand-vara-de-oro, #D4A437);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .info_hero2 {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+    .info_hero2-item {
+        min-width: 0;
+    }
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #33180B;
+}
+
+.footer-content {
+    color: #D1D5DC;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 32px;
+    margin-top: 32px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.enlaces h3{
+    color: white;
+    font-size: 17px;
+}
+
+.footer-content .logo,
+.footer-content .enlaces,
+.footer-content .contacto,
+.footer-content .horarios {
+    flex: 1 1 180px;
+    margin-bottom: 24px;
+    min-width: 180px;
+}
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid #D1D5DC;
+    margin-top: 32px;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-bottom p {
+    color: #D1D5DC;
+    font-size: 14px;
+    margin: 0;
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 12px;
+        max-width: 100%;
+        left: 0;
+        transform: none;
+    }
+    .footer-content .logo,
+    .footer-content .enlaces,
+    .footer-content .contacto,
+    .footer-content .horarios {
+        min-width: 0;
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+        padding-top: 12px;
+        gap: 8px;
+    }
+    .footer-bottom p {
+        text-align: center;
+    }
+}
+
+.valores-marca {
+    padding-bottom: 5pc;
+}
+
+.contacto p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.horarios p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.icon-footer {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
 
 /*      ------------------- Productos.html -------------------     */
