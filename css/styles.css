@@ -1,3 +1,11 @@
+/*      ------------------- Recursos comunes -------------------     */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
@@ -18,6 +26,49 @@
     /* Acentos suaves, detalles femeninos */
     --brand-color-texto-gris: #6B6B6B;
 }
+
+header  {
+    background: F5E6D3;
+    color: #FFFFFF;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+/*  --Logo--    */
+header img{
+    width: 5%;
+    height: auto;
+    margin-right: 4%;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0% 20%;
+}
+header nav form{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    margin: 2%;
+    position: relative;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 15%;
+    padding: 5%;
+}
+header ul li{
+    padding: 5%;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
 
 body {
     font-family: var(--font-sans);
