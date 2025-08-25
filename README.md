@@ -4,11 +4,21 @@ Proyecto web para la presentación de la colección actual de Mueblería Jota He
 
 ## Estructura
 
-- **index.html**  
-  Página principal con la colección de productos, información de la marca y valores destacados.
+## Estructura de Carpetas
 
-- **styles.css**  
-  Estilos personalizados, paleta de colores de la marca, fuentes y diseño responsive.
+```
+Muebleria Jota Grupo 4/
+│
+├── index.html
+├── productos.html
+├── contacto.html
+├── README.md
+├── css/
+│   └── styles.css
+├── assets/
+│   ├── img/
+└── js/
+```
 
 ## Características
 
