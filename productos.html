@@ -10,15 +10,13 @@
 
 <body>
     <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <nav>
             <div class="logo">
                 <img src="assets/img/logo.svg" alt="Logo Mueblería Jota Hnos" href="index.html">
             </div>
             <ul class="nav-links">
-                <form action="/buscar" method="post" role="search">
-                    <input type="text">
-                    <button type="submit">icono</button>
-                </form>
+                
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="#">Nosotros</a></li>
@@ -35,12 +33,15 @@
 
     <main>
         <h1>Todos los Productos</h1>
-        <aside>
-            <p>Sofás, Sillas, Butacas</p>
-            <p>Mesas</p>
-            <p>Cama</p>
-            <p>Biblioteca</p>
-        </aside>
+        <ul>
+            <form action="/buscar" method="post" role="search" class="buscador">
+                <input type="text" placeholder="Buscar producto...">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            
+        </ul>
 
         <!--    La información de los productos se cargará desde un archivo JavaScript local.  -->
         <div class="placas-container1">
