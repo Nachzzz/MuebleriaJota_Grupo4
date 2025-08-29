@@ -277,9 +277,9 @@ h2 {
 
 .buscador{
     margin: 20px auto;
-    width: 400px; /* Ajustá el ancho */
+    width: 400px; 
     background: #ffffff;
-    border-radius: 50px; /* Ovalado */
+    border-radius: 50px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden
 
@@ -297,27 +297,33 @@ h2 {
 }
 
 .buscador button:hover {
-  background: #9b6d5e; /* Un tono más oscuro al pasar el mouse */
+  background: #9b6d5e; 
 }
+
+
 
 .btn-coleccion {
-    padding: 8px 2rem;
-    background: white;
+    
+    padding: 30px 40px;
+    background: #fff;
     color: var(--brand-siena-tostado);
-    border: var(--brand-siena-tostado) 1px solid;
-    border-radius: 5px;
-    font-size: 14px;
+    border: 1px solid var(--brand-siena-tostado);
+    border-radius: 6px;
+    font-size: 15px;
     font-family: var(--font-sans);
+    font-weight: 500;
     cursor: pointer;
-    transition: background 0.2s;
-    width: auto;
+    transition: background 0.2s, color 0.2s, border 0.2s;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-
+.btn-coleccion:hover {
+    background: var(--brand-siena-tostado);
+    color: #fff;
+    border-color: var(--brand-siena-tostado);
+}
 .coleccion{
     display: flex;
     justify-content: center;
@@ -567,15 +573,19 @@ nav {
 .btn-hero{
     margin-top: 12px;
     padding: 8px 18px;
-    background: var(--brand-siena-tostado);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
+    background: #fff;
+    color: var(--brand-siena-tostado);
+    border: 1px solid var(--brand-siena-tostado);
+    border-radius: 6px;
+    font-size: 15px;
     font-family: var(--font-sans);
+    font-weight: 500;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background 0.2s, color 0.2s, border 0.2s;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-hero1 {
@@ -601,7 +611,11 @@ nav {
     color: #fff;
     border-color: var(--brand-siena-tostado);
 }
-
+.btn-hero:hover {
+    background: var(--brand-siena-tostado);
+    color: #fff;
+    border-color: var(--brand-siena-tostado);
+}
 
 
 .info_hero {
