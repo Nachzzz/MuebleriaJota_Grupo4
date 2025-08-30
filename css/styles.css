@@ -273,7 +273,6 @@ h2 {
     background: var(--brand-siena-tostado);
 }
 
-<<<<<<< HEAD
 .titulo-product{
     padding: 50px;
     text-align: center;
@@ -282,6 +281,10 @@ h2 {
 
 .negro{
     color: #000000;
+}
+
+.marron{
+    color: #6d2606;
 }
 
 .buscar-product{
@@ -314,36 +317,6 @@ h2 {
 .btn-coleccion {
     
     padding: 8px 10px;
-=======
-.buscador {
-    margin: 20px auto;
-    width: 400px;
-    background: #ffffff;
-    border-radius: 50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden
-}
-
-.buscador input {
-    flex: 1;
-    border: none;
-    padding: 15px 20px;
-    font-size: 16px;
-    border-radius: 50px 0 0 50px;
-    outline: none;
-}
-
-.buscador button i {
-    color: #7c3721;
-}
-
-.buscador button:hover {
-    background: #9b6d5e;
-}
-
-.btn-coleccion {
-    padding: 8px 2rem;
->>>>>>> f95d8d8a9ea332e9a44a2696515a08af4d11ce61
     background: #fff;
     color: var(--brand-siena-tostado);
     border: 1px solid var(--brand-siena-tostado);
@@ -365,12 +338,8 @@ h2 {
     border-color: var(--brand-siena-tostado);
 }
 
-<<<<<<< HEAD
 
 .coleccion{
-=======
-.coleccion {
->>>>>>> f95d8d8a9ea332e9a44a2696515a08af4d11ce61
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,12 +365,8 @@ h2 {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     padding: 16px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 17rem;
-    height: auto;
-    font-size: 12px;
     position: relative;
 }
 
