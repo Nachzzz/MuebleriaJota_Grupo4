@@ -2,7 +2,6 @@
 
 Proyecto web para la presentación de la colección actual de Mueblería Jota Hermanos, destacando productos, valores y diseño sustentable.
 
-## Estructura
 
 ## Estructura de Carpetas
 
