@@ -275,36 +275,46 @@ h2 {
     background: var(--brand-siena-tostado);
 }
 
-.buscador{
-    margin: 20px auto;
-    width: 400px; 
-    background: #ffffff;
-    border-radius: 50px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden
-
-}
-.buscador input {
-  flex: 1;
-  border: none;
-  padding: 15px 20px;
-  font-size: 16px;
-  border-radius: 50px 0 0 50px;
-  outline: none;
-}
-.buscador button i {
-  color: #7c3721;
+.titulo-product{
+    padding: 50px;
+    text-align: center;
+    margin: 30px;
 }
 
-.buscador button:hover {
-  background: #9b6d5e; 
+.negro{
+    color: #000000;
+}
+
+.buscar-product{
+    background-color: #f3f2f2;
+    border-radius: 10px;
+    border: 2px solid #A0522D;
+}
+
+.buscador-product{
+    padding: 10px;
 }
 
 
+.coleccion1{
+    
+    display: flex;
+    gap: 1rem;
+    padding: 2px;
+    
+}
+
+.btn-coleccion.especial{
+    padding: 30px 40px;
+    
+}
+
+
+/*camila*/
 
 .btn-coleccion {
     
-    padding: 30px 40px;
+    padding: 8px 10px;
     background: #fff;
     color: var(--brand-siena-tostado);
     border: 1px solid var(--brand-siena-tostado);
@@ -324,6 +334,8 @@ h2 {
     color: #fff;
     border-color: var(--brand-siena-tostado);
 }
+
+
 .coleccion{
     display: flex;
     justify-content: center;
