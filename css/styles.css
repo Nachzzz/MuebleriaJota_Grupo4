@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-    --font-size: 14px;
+    --font-size: 12pt;
+    --line-height-body: 1.6;
     --font-serif: 'Playfair Display', serif;
     --font-sans: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
 
@@ -21,6 +22,7 @@
 
 
 body {
+    line-height: var(--line-height-body);
     font-family: var(--font-sans);
     background: linear-gradient(290deg, #F5E6D3 0%, #FFFFFF 50%, #F5E6D3 100%);
     font-size: var(--font-size);
@@ -33,25 +35,15 @@ body {
     margin: 0;
 }
 
-/* MOBILE FIRST: estilos base ya aplican para mobile.
-   Ahora agregamos mejoras para pantallas pequeñas y luego escalamos para desktop. */
-
-/* Ajustes generales para mobile */
-body {
-    font-size: 15px;
-    padding: 0 8px;
-}
-
 h2 {
     font-size: 13px;
 }
 
 .placas-container {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     margin-top: 24px;
     width: 100%;
-    padding: 25px;
     font-size: 1.1rem;
     min-height: 350px;
     border-radius: 12px;
@@ -104,74 +96,110 @@ h2 {
 
 }
 
-
-
 .placa:hover {
     transform: scale(1.01);
     box-shadow: 2px 2px 20px #1f1f1c;
 
 }
 
-/* Desktop: 768px en adelante */
-@media (min-width: 768px) {
-    body {
-        font-size: var(--font-size);
-        padding: 0;
-    }
+@media (max-width: 600px) {
+  /* Hero Banner */
+  .hero-banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 12px;
+  }
 
-    h1 {
-        font-size: 31px;
+  .info_hero h2 {
+    font-size: 9pt;
+  }
 
-    }
+  .info_hero h1 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
 
-    h2 {
-        font-size: 12px;
-    }
+  .info_hero p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 
-    .placas-container {
-        flex-direction: row;
-        gap: 32px;
-        margin-top: 32px;
-        width: auto;
+  .div-btn {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
 
+  .btn-hero,
+  .btn-hero1 {
+    width: 100%;
+    text-align: center;
+  }
 
+  .info_hero2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
 
-    }
+  .info_hero2-item {
+    text-align: center;
+  }
 
-    .placa {
-        width: 180px;
-        max-width: none;
-        align-items: flex-start;
-    }
+  .img_hero img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
 
-    .placa img {
-        height: auto;
-    }
+  /* Productos Destacados */
+  .productos-destacados {
+    padding: 20px 12px;
+    text-align: center;
+  }
 
-    .coleccion {
-        height: 16rem;
-        margin: 0;
-    }
+  .info_productos h2 {
+    font-size: 16px;
+  }
 
-    .btn-coleccion {
-        width: auto;
-        max-width: none;
-        font-size: 14px;
-    }
+  .info_productos h1 {
+    font-size: 22px;
+  }
 
-    .placas-info {
-        flex-direction: row;
-        gap: 1rem;
-        margin: 0;
-        width: auto;
-    }
+  .info_productos p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 
-    .placa1 {
-        width: 17rem;
-        max-width: none;
-        margin: 0;
-    }
+  .placas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .placa {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .placa img {
+    width: 100%;
+    height: auto;
+  }
+
+  .coleccion {
+    margin-top: 20px;
+  }
+
+  .btn-coleccion {
+    width: 100%;
+    padding: 12px;
+  }
 }
+
 
 h1 {
     font-family: var(--font-serif);
@@ -265,85 +293,91 @@ h2 {
     background: var(--brand-siena-tostado);
 }
 
-.titulo-product{
+.titulo-product {
     padding: 50px;
     text-align: center;
     margin: 30px;
 }
 
-.negro{
+.negro {
     color: black;
 }
 
-.marron{
+.marron {
     color: var(--brand-siena-tostado);
 }
 
-.buscar-product{
+.buscar-product {
     background-color: #f3f2f2;
     border-radius: 10px;
     border: 2px solid #A0522D;
 }
 
-.buscador{
+.buscador {
     padding: 8px;
     background-color: #9e5b3c;
-    width: 400px;  
-    border-radius: 10px; 
-    
-    
+    width: 400px;
+    border-radius: 10px;
+
+
     margin: 10px;
-    
+
     display: flex;
     flex-direction: row-reverse;
-    
+
 }
+
 .buscador input::placeholder {
     color: #000;
 }
 
 .buscador input {
-    
+
     flex: 1;
     border: none;
     padding: 5px 10px;
     font-size: 16px;
     outline: none;
     background-color: #9e5b3c;
-    
+
 }
 
 .buscador button {
-    background: transparent; /* sin fondo */
-    border: none;           /* sin borde */
-    cursor: pointer;        /* manito al pasar */
-    padding: 0 5px;         /* opcional, achica espacio */
+    background: transparent;
+    /* sin fondo */
+    border: none;
+    /* sin borde */
+    cursor: pointer;
+    /* manito al pasar */
+    padding: 0 5px;
+    /* opcional, achica espacio */
 }
+
 .buscador button i {
-    
+
     color: #080808;
-    
+
 }
 
 
-.coleccion1{
-    
+.coleccion1 {
+
     display: flex;
     gap: 1rem;
     padding: 2px;
-    
+
 }
 
-.btn-coleccion.especial{
+.btn-coleccion.especial {
     padding: 30px 40px;
-    
+
 }
 
 
 /*camila*/
 
 .btn-coleccion {
-    
+
     padding: 8px 10px;
     background: #fff;
     color: var(--brand-siena-tostado);
@@ -358,7 +392,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .btn-coleccion:hover {
@@ -368,7 +402,7 @@ h2 {
 }
 
 
-.coleccion{
+.coleccion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -573,34 +607,64 @@ nav {
     color: #fff;
 }
 
+/* Botón hamburguesa */
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    /* se muestra solo en mobile */
+}
 
+.menu-toggle img {
+    width: 28px;
+    height: 28px;
+}
 
-/* Responsive navbar para mobile */
+/* Mobile */
 @media (max-width: 600px) {
     nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 12px 8px;
+        justify-content: center;
+        position: relative;
     }
 
+    /* Ocultar menú por defecto */
     .nav-links {
+        display: none;
         flex-direction: column;
-        gap: 8px;
+        gap: 12px;
+        background: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
         width: 100%;
-        margin-top: 8px;
+        padding: 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .nav-links li {
-        width: 100%;
+    /* Mostrar menú cuando está activo */
+    .nav-links.active {
+        display: flex;
     }
 
-    .nav-links a,
-    .nav-links .carrito-btn {
-        width: 100%;
+    /* Logo centrado */
+    .logo {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Botón hamburguesa a la derecha */
+    .menu-toggle {
         display: block;
-        text-align: left;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
+
+
 
 /* Hero Banner */
 
@@ -695,7 +759,7 @@ nav {
     border-color: var(--brand-siena-tostado);
 }
 
-.links{
+.links {
     text-decoration: none;
     color: inherit;
 }
@@ -765,6 +829,26 @@ nav {
 
 /* Responsive */
 @media (max-width: 600px) {
+
+    .hero-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+        min-height: auto;
+    }
+
+    .info_hero {
+        align-items: center;
+    }
+
+    .info_hero p {
+        text-align: center;
+    }
+
+    .info_hero h1 {
+        font-size: 2em;
+    }
+
     .info_hero2 {
         flex-direction: column;
         gap: 18px;
@@ -832,11 +916,10 @@ footer {
     text-align: left;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .footer-content {
         flex-direction: column;
         align-items: center;
-        padding: 24px 12px;
         max-width: 100%;
         left: 0;
         transform: none;
@@ -1126,7 +1209,7 @@ footer {
     padding-top: 8pc;
 }
 
-.herencia-viva{
+.herencia-viva {
     display: flex;
     align-items: center;
     /* centra verticalmente */
@@ -1148,12 +1231,13 @@ footer {
     align-items: flex-start;
 }
 
-.puntos h2{
+.puntos h2 {
     color: black;
 }
 
 .lista-servicios {
-    list-style: none; /* quitamos las viñetas por defecto */
+    list-style: none;
+    /* quitamos las viñetas por defecto */
     padding-left: 0;
     margin: 20px 0;
     text-align: left;
@@ -1161,14 +1245,16 @@ footer {
 
 .lista-servicios li {
     position: relative;
-    padding-left: 20px; /* espacio para el punto */
+    padding-left: 20px;
+    /* espacio para el punto */
     margin-bottom: 15px;
     line-height: 1.5;
     color: #444;
 }
 
 .lista-servicios li::before {
-    content: "●"; /* viñeta personalizada */
+    content: "●";
+    /* viñeta personalizada */
     position: absolute;
     left: 0;
     top: 4px;
@@ -1177,82 +1263,60 @@ footer {
 }
 
 
-/* ====== Responsive ====== */
+/* ====== Responsive Nosotros ====== */
+@media (max-width: 600px) {
 
-/* Tablets */
-@media (max-width: 992px) {
-    .timeline-title {
-        font-size: 24px;
+    .timeline-section {
+        padding: 0%;
     }
 
-    .timeline-description {
-        font-size: 15px;
-        padding: 0 10px;
+    .timeline-header {
+        font-size: 12px;
+        justify-content: center;
+        text-align: center;
+        margin: 2pc;
+        padding: 2pc;
     }
 
-    .timeline-item {
-        padding: 15px 30px;
+    .timeline-item.left {
+        text-align: center;
+        width: auto;
+        padding-left: 100px;
     }
 
-    .timeline-content h3 {
-        font-size: 17px;
-    }
-}
-
-/* Móviles grandes */
-@media (max-width: 768px) {
-    .timeline-line {
-        left: 20px;
-        transform: none;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 20px;
-        text-align: left;
-    }
-
-    .timeline-item.left,
     .timeline-item.right {
-        left: 0;
+        text-align: center;
+        width: auto;
+        padding-left: 100px;
+        left: 0%;
+    }
+
+    .timeline-line {
+        left: 15%;
+    }
+
+    .timeline-item.left::before,
+    .timeline-item.right::before {
+        left: 55px;
     }
 
     .timeline-item::before {
-        left: 5px;
-        right: auto;
-    }
-}
-
-/* Móviles chicos */
-@media (max-width: 480px) {
-    .timeline-title {
-        font-size: 20px;
+        right: 172px;
     }
 
-    .timeline-description {
-        font-size: 14px;
+    .placas-info {
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    .timeline-content {
-        padding: 15px;
+    .info_herencia,
+    .herencia-viva {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 
-    .timeline-year {
-        font-size: 13px;
-        padding: 3px 8px;
-    }
-
-    .timeline-tag {
-        font-size: 12px;
-        padding: 2px 6px;
-    }
-
-    .timeline-content h3 {
-        font-size: 16px;
-    }
-
-    .timeline-content p {
-        font-size: 14px;
+    .valores-header {
+        padding: 4pc;
     }
 }

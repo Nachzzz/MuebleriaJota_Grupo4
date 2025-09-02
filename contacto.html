@@ -11,13 +11,23 @@
 <body>
     <header>
         <nav>
+            <!-- Logo -->
             <div class="logo">
-                <img src="assets/img/logo.svg" alt="Logo Mueblería Jota Hnos">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="Logo Mueblería Jota Hnos">
+                </a>
             </div>
+
+            <!-- Botón hamburguesa -->
+            <button class="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+
+            <!-- Links -->
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="#">Nosotros</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li>
                     <button class="carrito">
@@ -47,7 +57,8 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje aquí"></textarea>
+                    <textarea id="message" name="message" rows="5" required
+                        placeholder="Escribe tu mensaje aquí"></textarea>
                 </div>
                 <button type="submit" class="btn-enviar">Enviar</button>
             </form>
@@ -111,8 +122,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>
-
-<!-- comentario para commit -->
