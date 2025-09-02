@@ -79,14 +79,6 @@ h2 {
 }
 
 
-.placas-info {
-    flex-direction: column;
-    gap: 20px;
-    margin: 32px 0;
-    width: 100%;
-
-}
-
 .placa1 {
 
     width: 100%;
@@ -280,11 +272,11 @@ h2 {
 }
 
 .negro{
-    color: #000000;
+    color: black;
 }
 
 .marron{
-    color: #6d2606;
+    color: var(--brand-siena-tostado);
 }
 
 .buscar-product{
@@ -327,10 +319,9 @@ h2 {
     cursor: pointer;        /* manito al pasar */
     padding: 0 5px;         /* opcional, achica espacio */
 }
+
 .buscador button i {
-    
     color: #080808;
-    
 }
 
 
@@ -343,10 +334,8 @@ h2 {
 }
 
 .btn-coleccion.especial{
-    padding: 30px 40px;
-    
+    padding: 30px 40px;   
 }
-
 
 /*camila*/
 
@@ -390,7 +379,7 @@ h2 {
 .placas-info {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
 }
@@ -405,6 +394,7 @@ h2 {
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
 }
 
 .placa1 .circle {
@@ -436,6 +426,17 @@ h2 {
     align-items: center;
     background: var(--brand-rosa-polvoriento);
 }
+
+.placa1 .circle4 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--brand-verde-salvia);
+}
+
 
 .placas-info h1 {
     font-size: 15px;
@@ -691,6 +692,10 @@ nav {
     border-color: var(--brand-siena-tostado);
 }
 
+.links{
+    text-decoration: none;
+    color: inherit;
+}
 
 .info_hero {
     width: 100%;
@@ -976,4 +981,275 @@ footer {
 .contacto-info-extra a {
     color: var(--brand-siena-tostado);
     text-decoration: underline;
+}
+
+/* Nosotros */
+.timeline-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.timeline-header {
+    margin-bottom: 60px;
+}
+
+.timeline-subtitle {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brand-verde-salvia);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.timeline-title {
+    font-family: var(--font-serif);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #3b2c23;
+    margin-bottom: 12px;
+}
+
+.timeline-description {
+    font-size: 16px;
+    color: #555;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #d9b99b;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    font-family: var(--font-serif);
+}
+
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.timeline-year {
+    display: inline-block;
+    background: #A0522D;
+    color: #fff;
+    font-family: var(--font-sans);
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.timeline-tag {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    padding: 3px 10px;
+    border: 1px solid var(--brand-verde-salvia);
+    border-radius: 6px;
+    color: var(--brand-verde-salvia);
+}
+
+.timeline-content h3 {
+    margin: 10px 0 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c2c2c;
+}
+
+.timeline-content p {
+    font-size: 15px;
+    color: #555;
+    font-family: var(--font-sans);
+}
+
+/* Bolitas en la línea */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 3px solid #A0522D;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline-item.right::before {
+    left: -10px;
+    right: auto;
+}
+
+.valores-header {
+    padding-top: 8pc;
+}
+
+.herencia-viva{
+    display: flex;
+    align-items: center;
+    /* centra verticalmente */
+    justify-content: space-between;
+    /* texto izq, imagen der */
+    min-height: 80vh;
+    gap: 40px;
+    padding: 0 18%;
+    /* opcional, espacio a los lados */
+}
+
+.info_herencia {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.puntos h2{
+    color: black;
+}
+
+.lista-servicios {
+    list-style: none; /* quitamos las viñetas por defecto */
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.lista-servicios li {
+    position: relative;
+    padding-left: 20px; /* espacio para el punto */
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.lista-servicios li::before {
+    content: "●"; /* viñeta personalizada */
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 12px;
+    color: var(--brand-verde-salvia);
+}
+
+
+/* ====== Responsive ====== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .timeline-title {
+        font-size: 24px;
+    }
+
+    .timeline-description {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .timeline-item {
+        padding: 15px 30px;
+    }
+
+    .timeline-content h3 {
+        font-size: 17px;
+    }
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+    .timeline-line {
+        left: 20px;
+        transform: none;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 20px;
+        text-align: left;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+    }
+
+    .timeline-item::before {
+        left: 5px;
+        right: auto;
+    }
+}
+
+/* Móviles chicos */
+@media (max-width: 480px) {
+    .timeline-title {
+        font-size: 20px;
+    }
+
+    .timeline-description {
+        font-size: 14px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+    }
+
+    .timeline-year {
+        font-size: 13px;
+        padding: 3px 8px;
+    }
+
+    .timeline-tag {
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+
+    .timeline-content h3 {
+        font-size: 16px;
+    }
+
+    .timeline-content p {
+        font-size: 14px;
+    }
 }
