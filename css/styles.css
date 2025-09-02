@@ -319,10 +319,9 @@ h2 {
     cursor: pointer;        /* manito al pasar */
     padding: 0 5px;         /* opcional, achica espacio */
 }
+
 .buscador button i {
-    
     color: #080808;
-    
 }
 
 
@@ -335,10 +334,8 @@ h2 {
 }
 
 .btn-coleccion.especial{
-    padding: 30px 40px;
-    
+    padding: 30px 40px;   
 }
-
 
 /*camila*/
 
