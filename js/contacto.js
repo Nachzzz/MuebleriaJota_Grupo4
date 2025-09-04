@@ -1,24 +1,9 @@
-// const form = document.getElementById('contacto');
-// const formu = document.getElementById('contacto');
-// const nombre = document.getElementById('name');
-// const email = document.getElementById('email');
-// const mensaje = document.getElementById('message');
-
-
-// formu.addEventListener('submit', function(event) {
-//     event.preventDefault(); // Evita el envío del formulario
-//     console.log('Nombre:', nombre.value);
-//     alert('Gracias por contactarnos. Nos pondremos en contacto contigo pronto.');
-//     formu.reset(); // Opcional: Resetea el formulario después del envío
-// });
-
-// Espera a que todo el contenido del HTML esté cargado
-document.addEventListener('DOMContentLoaded', function () {
-
+// contacto.js
+export function initContactoForm() {
     const formulario = document.getElementById('contacto');
+    if (!formulario) return; // si no existe el form en la página, no hace nada
 
     formulario.addEventListener('submit', function (event) {
-        
         event.preventDefault();
 
         // limpio mensajes de error/éxito anteriores
@@ -27,19 +12,16 @@ document.addEventListener('DOMContentLoaded', function () {
             mensajePrevio.remove();
         }
 
-        // 4. capturo los valores de los campos del formulario
-        // .trim() elimina espacios en blanco al inicio y al final
+        // capturo valores
         const nombre = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
         const mensaje = document.getElementById('message').value.trim();
 
-        // realizo validaciones
         if (nombre === '' || email === '' || mensaje === '') {
             mostrarMensaje('Por favor, completa todos los campos.', 'error');
             return;
         }
 
-        // email debe tenre formato valido 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             mostrarMensaje('Por favor, introduce un correo electrónico válido.', 'error');
@@ -53,17 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
         formulario.reset();
     });
 
-    /**
-     * Función para mostrar un mensaje en el DOM
-     * @param {string} texto - El texto del mensaje a mostrar.
-     * @param {string} tipo - 'exito' o 'error' para aplicar diferentes estilos.
-     */
     function mostrarMensaje(texto, tipo = 'exito') {
         const divMensaje = document.createElement('div');
         divMensaje.textContent = texto;
-        divMensaje.classList.add('form-message'); // Clase para identificarlo
+        divMensaje.classList.add('form-message');
 
-        // Estilos para el mensaje
         divMensaje.style.padding = '10px';
         divMensaje.style.marginTop = '15px';
         divMensaje.style.textAlign = 'center';
@@ -79,11 +55,10 @@ document.addEventListener('DOMContentLoaded', function () {
         
         formulario.insertAdjacentElement('afterend', divMensaje);
 
-        // si da mensaje de éxito, lo eliminamos después de 5 segundos
         if (tipo === 'exito') {
             setTimeout(() => {
                 divMensaje.remove();
             }, 5000);
         }
     }
-});
+}

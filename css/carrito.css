@@ -1,0 +1,89 @@
+:root {
+    --font-size: 12pt;
+    --line-height-body: 1.6;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+
+    /* Paleta de colores oficial del Manual de Marca Hermanos Jota */
+    --brand-siena-tostado: #a0512d4d;
+    /* Color principal de marca, títulos principales */
+    --brand-verde-salvia: #87A96B;
+    /* Acento secundario, sustentabilidad */
+    --brand-alabastro-calido: #F5E6D3;
+    /* Fondos principales, fotografía */
+    --brand-vara-de-oro: #D4A437;
+    /* Detalles premium, acentos */
+    --brand-rosa-polvoriento: #C47A6D;
+    /* Acentos suaves, detalles femeninos */
+    --brand-color-texto-gris: #6B6B6B;
+}
+
+.h1{
+    font-size: 42pt;
+}
+
+.carrito-detalles h2{
+    font-size: 17pt;
+    font-family: var(--font-serif);
+    font-weight: 400;
+    color: black;
+}
+
+.carrito-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8pc;
+}
+
+.carrito-header{
+    text-align: center;
+}
+
+.carrito-header p{
+    color: var(--brand-verde-salvia);
+}
+
+.selec{
+    color: var(--brand-color-texto-gris);
+}
+
+.carrito-producto{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.resumen{
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-color: var(--brand-siena-tostado);
+    border-width: 1px;
+    padding: 2pc;
+}
+
+.carrito-detalles{
+    background-color: white;
+    padding: 2pc;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    border-style: solid;
+    border-color: var(--brand-siena-tostado);
+    border-width: 1px;
+}
+
+.envio-info{
+    border-style: solid;
+    border-color: var(--brand-siena-tostado);
+    border-width: 1px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #a0512d4d;
+}
