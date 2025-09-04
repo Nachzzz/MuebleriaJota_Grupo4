@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nombre": "Aparador Uspallata",
+        "descripcion": "Descripción del Producto A",
+        "precio": 100.0,
+        "stock": 50
+    },
+    {
+        "id": 2,
+        "nombre": "Biblioteca Recoleta",
+        "descripcion": "Descripción del Producto B",
+        "precio": 150.0,
+        "stock": 30
+    },
+    {
+        "id": 3,
+        "nombre": "Butaca Mendoza",
+        "descripcion": "Descripción del Producto C",
+        "precio": 200.0,
+        "stock": 20
+    },
+    {
+        "id": 4,
+        "nombre": "Escritorio Costa",
+        "descripcion": "Descripción del Producto A",
+        "precio": 100.0,
+        "stock": 50
+    },
+    {
+        "id": 5,
+        "nombre": "Mesa Comedor Pampa",
+        "descripcion": "Descripción del Producto B",
+        "precio": 150.0,
+        "stock": 30
+    },
+    {
+        "id": 6,
+        "nombre": "Mesa de Centro Araucaria",
+        "descripcion": "Descripción del Producto C",
+        "precio": 200.0,
+        "stock": 20
+    },
+    {
+        "id": 7,
+        "nombre": "",
+        "descripcion": "Descripción del Producto A",
+        "precio": 100.0,
+        "stock": 50
+    },
+    {
+        "id": 8,
+        "nombre": "Producto B",
+        "descripcion": "Descripción del Producto B",
+        "precio": 150.0,
+        "stock": 30
+    },
+    {
+        "id": 9,
+        "nombre": "Producto C",
+        "descripcion": "Descripción del Producto C",
+        "precio": 200.0,
+        "stock": 20
+    },
+    {
+        "id": 10,
+        "nombre": "Producto A",
+        "descripcion": "Descripción del Producto A",
+        "precio": 100.0,
+        "stock": 50
+    }
+]
