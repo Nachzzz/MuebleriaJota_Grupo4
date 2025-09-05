@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch("./data/productos.json")
             .then(response => response.json())
             .then(data => cargarCatalogo(data))
-            .catch(error => console.error("Error al cargar el catálogo:", error));
+            .catch(err => console.error("Error al cargar el catálogo:", err));
     }
 
     if (pagina.includes("contacto.html")) {

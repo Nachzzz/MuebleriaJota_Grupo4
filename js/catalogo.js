@@ -1,3 +1,5 @@
+import { agregarAlCarrito } from "./carrito.js"
+
 export function cargarCatalogo(productos) {
     console.log(productos)
     const contenedor = document.getElementById("catalogo");
@@ -5,25 +7,25 @@ export function cargarCatalogo(productos) {
 
     productos.forEach(p => {
         
-        const div = document.createElement("div");
+        const div = document.createElement("div")
         div.className = "card"
 
-        const img = document.createElement("img");
+        const img = document.createElement("img")
         img.src = p.imagen;
         img.alt = p.nombre;
 
-        const h2 = document.createElement("h2");
+        const h2 = document.createElement("h2")
         h2.textContent = p.nombre;
 
-        const descripcion = document.createElement("p");
-        descripcion.textContent = p.descripcion;
+        const descripcion = document.createElement("p")
+        descripcion.textContent = p.descripcion
 
-        const precio = document.createElement("strong");
-        precio.textContent = `$${p.precio}`;
+        const precio = document.createElement("strong")
+        precio.textContent = `$${p.precio}`
 
-        const boton = document.createElement("button");
-        boton.textContent = "Agregar al carrito";
-        boton.addEventListener("click", () => agregaralCarrito());
+        const boton = document.createElement("button")
+        boton.textContent = "Agregar al carrito"
+        boton.addEventListener("click", () => agregarAlCarrito(p))
 
         div.appendChild(img);
         div.appendChild(h2);

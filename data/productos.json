@@ -5,6 +5,7 @@
         "descripcion": "Descripción del Producto A",
         "precio": 100.0,
         "stock": 50
+        
     },
     {
         "id": 2,

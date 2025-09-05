@@ -1,6 +1,6 @@
-export function agregaralCarrito(p) {
+export function agregarAlCarrito(p) {
     console.log(p)
-    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || []
 
     const objeto_producto = {
         id: p.id,
@@ -18,5 +18,6 @@ export function agregaralCarrito(p) {
     }
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
-    alert(`${objeto_producto.nombre} ha sido agregado al carrito.`);
+    alert(`${p.nombre} ha sido agregado al carrito.`);
+    //actualizar contador
 }
