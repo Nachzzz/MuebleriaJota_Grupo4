@@ -8,7 +8,7 @@ export function cargarCatalogo(productos) {
     productos.forEach(p => {
         
         const div = document.createElement("div")
-        div.className = "card"
+        div.className = "placa"
 
         const img = document.createElement("img")
         img.src = p.imagen;
@@ -33,7 +33,7 @@ export function cargarCatalogo(productos) {
         div.appendChild(precio);
         div.appendChild(boton);
 
-        contenedor.appendChild(div);
+    contenedor.appendChild(div);
 
     })
 };
