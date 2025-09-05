@@ -1,4 +1,14 @@
 export function detalleProducto(p) {
+    console.log("Detalle del producto:", p);
+
+    // Guardar el producto en localStorage
+    localStorage.setItem ("productoDetalle", JSON.stringify(p));
+
+    // Redirigir a la página de detalle
+    window.location.href = "producto.html";
+    const contenedor = document.getElementById("catalogo");
+    if (!contenedor) return
+
     console.log(p)
     let carrito = JSON.parse(localStorage.getItem("carrito")) || []
 
@@ -10,14 +20,6 @@ export function detalleProducto(p) {
         cantidad: 1
     }
 
-    const index = carrito.findIndex(item => item.id === objeto_producto.id);
-    if (index !== -1) {
-        carrito[index].cantidad += 1;
-    } else {
-        carrito.push(objeto_producto);
-    }
+    
 
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-    alert(`${p.nombre} ha sido agregado al carrito.`);
-    //actualizar contador
 }

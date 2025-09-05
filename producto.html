@@ -48,7 +48,31 @@
             </p>
         </div>
 
+        <div id="catalogo" class="placas-container1">    
+        </div>
 
+        <div id="detalle"></div>
+
+        <script type="module">
+            const producto = JSON.parse(localStorage.getItem("productoDetalle"));
+            const contenedor = document.querySelector("#detalle");
+
+            if (producto) {
+            contenedor.innerHTML = `
+                <h2>${producto.nombre}</h2>
+                <img src="${producto.img}" alt="${producto.nombre}" style="max-width:250px; display:block; margin-bottom:1rem;">
+                <p>${producto.descripcion}</p>
+                <p><strong>Precio:</strong> $${producto.precio}</p>
+                <button id="volver">Volver</button>
+            `;
+
+            document.querySelector("#volver").addEventListener("click", () => {
+                window.history.back();
+            });
+            } else {
+            contenedor.textContent = "❌ Producto no encontrado.";
+            }
+        </script>
     </main>
 
 
@@ -115,6 +139,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js" type="module"></script>
+
     
     
 </body>
