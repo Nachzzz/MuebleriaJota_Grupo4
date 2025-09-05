@@ -308,13 +308,16 @@ h2 {
 }
 
 .buscar-product {
+    padding-left:9px;
     background-color: #f3f2f2;
     border-radius: 10px;
     border: 2px solid #A0522D;
+    
 }
 
 .buscador {
-    padding: 8px;
+    
+    padding: 5px;
     background-color: #9e5b3c;
     width: 400px;
     border-radius: 10px;
@@ -343,6 +346,7 @@ h2 {
 }
 
 .buscador button {
+ 
     background: transparent;
     /* sin fondo */
     border: none;
@@ -361,7 +365,8 @@ h2 {
 
 
 .coleccion1 {
-
+    
+    margin: 9px;
     display: flex;
     gap: 1rem;
     padding: 2px;
