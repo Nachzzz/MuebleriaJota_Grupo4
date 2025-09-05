@@ -1,45 +1,23 @@
-document.addEventListener("DOMContentLoaded", () => {
+export function detalleProducto(p) {
+    console.log(p)
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || []
 
-    // Obtener el ID del producto desde la URL
-    const params = new URLSearchParams(window.location.search);
-    const idProducto = parseInt(params.get("id"));
-
-    if (!idProducto) {
-        console.error("No se encontró el ID del producto en la URL");
-        return;
+    const objeto_producto = {
+        id: p.id,
+        nombre: p.nombre,
+        descripcion: p.descripcion,
+        precio: p.precio,
+        cantidad: 1
     }
 
-    // Contenedor donde se renderizará el producto
-    const contenedor = document.getElementById("detalle-producto");
-    if (!contenedor) return;
+    const index = carrito.findIndex(item => item.id === objeto_producto.id);
+    if (index !== -1) {
+        carrito[index].cantidad += 1;
+    } else {
+        carrito.push(objeto_producto);
+    }
 
-    // Cargar productos desde el JSON
-    fetch("./data/productos.json")
-        .then(res => res.json())
-        .then(productos => {
-            // Buscar el producto que coincide con el ID
-            const producto = productos.find(p => p.id === idProducto);
-
-            if (!producto) {
-                contenedor.innerHTML = "<p>Producto no encontrado</p>";
-                return;
-            }
-
-            // Crear la tarjeta del producto
-            contenedor.innerHTML = `
-                <img src="${producto.imagen}" alt="${producto.nombre}">
-                <h2>${producto.nombre}</h2>
-                <p>${producto.descripcion}</p>
-                <h3>$${producto.precio.toLocaleString("es-AR")}</h3>
-                <button id="agregarCarrito">Agregar al carrito</button>
-            `;
-
-            // Evento del botón "Agregar al carrito"
-            document.getElementById("agregarCarrito").addEventListener("click", () => {
-                // Aquí llamás tu función de carrito
-                agregaralCarrito(producto);
-            });
-        })
-        .catch(err => console.error("Error al cargar productos:", err));
-
-});
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    alert(`${p.nombre} ha sido agregado al carrito.`);
+    //actualizar contador
+}

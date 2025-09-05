@@ -4,7 +4,8 @@
         "nombre": "Aparador Uspallata",
         "descripcion": "Descripción del Producto A",
         "precio": 100.0,
-        "stock": 50
+        "stock": 50,
+        "imagen": "https://github.com/Nachzzz/MuebleriaJota_Grupo4/blob/7fceba1d0a4c553e794ca6bab231bdafd3c214ae/assets/img/img1.png"
         
     },
     {

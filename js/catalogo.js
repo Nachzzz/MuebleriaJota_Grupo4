@@ -1,5 +1,5 @@
 import { agregarAlCarrito } from "./carrito.js"
-
+import { detalleProducto } from "./detalle.js"
 export function cargarCatalogo(productos) {
     console.log(productos)
     const contenedor = document.getElementById("catalogo");
@@ -23,15 +23,23 @@ export function cargarCatalogo(productos) {
         const precio = document.createElement("strong")
         precio.textContent = `$${p.precio}`
 
+        const botonDetalle = document.createElement("button")
+        botonDetalle.textContent = "Detalle producto"
+        botonDetalle.addEventListener("click", () => detalleProducto(p))
+
         const boton = document.createElement("button")
         boton.textContent = "Agregar al carrito"
         boton.addEventListener("click", () => agregarAlCarrito(p))
+
+        
 
         div.appendChild(img);
         div.appendChild(h2);
         div.appendChild(descripcion);
         div.appendChild(precio);
+        div.appendChild(botonDetalle);
         div.appendChild(boton);
+        
 
     contenedor.appendChild(div);
 
