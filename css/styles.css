@@ -379,6 +379,13 @@ h2 {
 }
 
 /*camila*/
+.btn-coleccion.producto{
+    padding: 2px 5px;
+    margin: 6px;
+    text-decoration: none;
+}
+
+
 
 .btn-coleccion {
 

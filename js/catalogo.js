@@ -4,6 +4,7 @@ export function cargarCatalogo(productos) {
     if (!contenedor) return
 
     productos.forEach(p => {
+        
         const div = document.createElement("div");
         div.className = "card"
 
@@ -29,6 +30,8 @@ export function cargarCatalogo(productos) {
         div.appendChild(descripcion);
         div.appendChild(precio);
         div.appendChild(boton);
+
+        contenedor.appendChild(div);
 
     })
 };
