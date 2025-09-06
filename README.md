@@ -35,10 +35,10 @@ Muebleria Jota Grupo 4/
 
 
 ## Créditos 📜
-Camila Selene Varela
-Suarez Gatica Agustina
-Salto Jorge Ignacio
-Sanabria Micaela Belen
-Sosa Franco
+- Camila Selene Varela
+- Suarez Gatica Agustina
+- Salto Jorge Ignacio
+- Sanabria Micaela Belen
+- Sosa Franco
 
 Grupo 4 - Proyecto Mueblería Jota Hnos
