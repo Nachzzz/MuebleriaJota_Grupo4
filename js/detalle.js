@@ -1,26 +1,33 @@
+function crearEstrellas(valor = 5) {
+    const max = 5;
+    let html = "";
+    for (let i = 1; i <= max; i++) {
+        html += `<span class="estrella">${i <= valor ? "★" : "☆"}</span>`;
+    }
+    return html;
+}
+
 export function detalleProducto(p) {
-    console.log("Detalle del producto:", p);
-
     // Guardar el producto en localStorage
-    localStorage.setItem ("productoDetalle", JSON.stringify(p));
-
+    localStorage.setItem("productoDetalle", JSON.stringify(p));
     // Redirigir a la página de detalle
     window.location.href = "producto.html";
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const producto = JSON.parse(localStorage.getItem("productoDetalle"));
     const contenedor = document.querySelector("#detalle");
 
     if (producto) {
-        const div = document.createElement("div")
         contenedor.innerHTML = `
-            
             <h2>${producto.nombre}</h2>
-            <img src="${producto.img}" alt="${producto.nombre}" style="max-width:250px; display:block; margin-bottom:1rem;">
-            <p>${producto.descripcion}</p>
+            <img src="${producto.imagen}" alt="${producto.nombre}" style="max-width:250px; display:block; margin-bottom:1rem;">
+            <div class="valoracion-estrellas">${crearEstrellas(producto.valoracion || 5)}</div>
+            <p class="descripcion">${producto.descripcion}</p>
             <p><strong>Precio:</strong> $${producto.precio}</p>
+            <p><strong>Stock:</strong> ${producto.stock ?? "No disponible"}</p>
+            ${producto.material ? `<p><strong>Material:</strong> ${producto.material}</p>` : ""}
+            ${producto.medidas ? `<p><strong>Medidas:</strong> ${producto.medidas}</p>` : ""}
             <button id="volver">Volver</button>
         `;
 

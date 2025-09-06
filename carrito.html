@@ -47,34 +47,17 @@
                 <div class="carrito-header">
                     <p>TU SELECCIÓN ARTESANAL</p>
                     <h1>Carrito de Compras</h1>
-                    <p class="selec">1 pieza seleccionada • $185.000</p>
-
-                    <button>Continuar Comprando</button>
+                    <button class="continuar-comprando"><a href="productos.html">Continuar Comprando</a></button>
                 </div>
 
                 <div class="carrito-producto">
                     <div class="carrito-detalles">
                         <h2>Productos seleccionados</h2>
-                        <button class="vaciar">Vaciar Carrito</button>
-                        <img src="assets/img/img.png" alt="Producto en el carrito">
-                        <h2>Silla</h2>
-                        <p>Precio: $185.000</p>
-                        <p><span>Materiales</span></p>
-                        <p><span>Dimensiones</span></p>
-                        <p><span>Tiempo</span></p>
-                        <label for="cantidad">Cantidad:</label>
-                        <input type="number" id="cantidad" name="cantidad" value="1" min="1">
-                        <button class="eliminar-btn">❌</button>
+                        <button class="vaciar" id="vaciar-carrito">Vaciar Carrito</button>
+                        <div id="carrito-productos"></div>
                     </div>
                     <div class="resumen-info">
-                        <div class="resumen">
-                            <h2>Resumen del pedido</h2>
-                            <p>Subtotal: $185.000</p>
-                            <p>Envío: Gratis</p>
-                            <h3>Total: $185.000</h3>
-                            <button class="finalizar-btn">Finalizar Compra</button>
-                            <p>Compra 100% segura y protegida</p>
-                        </div>
+                        <div class="resumen"></div>
                         <div class="envio-info">
                             <h2>Envio sin costo</h2>
                             <p>Delivery gratuito en CABA y GBA. Para el <br>
