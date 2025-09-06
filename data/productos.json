@@ -2,71 +2,144 @@
     {
         "id": 1,
         "nombre": "Aparador Uspallata",
-        "descripcion": "Descripción del Producto A",
-        "precio": 100.0,
-        "stock": 50
+        "descripcion": "Aparador de madera maciza con detalles en hierro.",
+        "precio": 185000,
+        "stock": 50,
+        "imagen": "https://nachzzz.github.io/img_ecommerce/aparadorUspallata.png",
+        "valoracion": 4,
+        "tipo": "Aparador",
+        "material": "Madera FSC + Hierro",
+        "medidas": "180 × 45 × 85 cm",
+        "tiempo": "3-4 semanas"
     },
     {
         "id": 2,
         "nombre": "Biblioteca Recoleta",
-        "descripcion": "Descripción del Producto B",
-        "precio": 150.0,
-        "stock": 30
+        "descripcion": "Biblioteca de diseño clásico en madera.",
+        "precio": 150000,
+        "stock": 30,
+        "imagen": "https://nachzzz.github.io/img_ecommerce/bibliotecaRecoleta.png",
+        "valoracion": 5,
+        "tipo": "Biblioteca",
+        "material": "Madera FSC",
+        "medidas": "120 × 35 × 200 cm",
+        "tiempo": "2-3 semanas"
     },
     {
         "id": 3,
         "nombre": "Butaca Mendoza",
-        "descripcion": "Descripción del Producto C",
-        "precio": 200.0,
-        "stock": 20
+        "descripcion": "Butaca tapizada en lino natural.",
+        "precio": 200000,
+        "stock": 20,
+        "imagen": "https://nachzzz.github.io/img_ecommerce/butacaMendoza.png",
+        "valoracion": 3,
+        "tipo": "Butaca",
+        "material": "Lino + Madera",
+        "medidas": "80 × 70 × 90 cm",
+        "tiempo": "2 semanas"
     },
     {
         "id": 4,
         "nombre": "Escritorio Costa",
         "descripcion": "Descripción del Producto A",
         "precio": 100.0,
-        "stock": 50
+        "stock": 50,
+        "imagen": "https://nachzzz.github.io/img_ecommerce/escritorioCosta.png",
+        "valoracion": 4,
+        "tipo": "Escritorio",
+        "material": "Madera FSC + Hierro",
+        "medidas": "120 × 60 × 75 cm",
+        "tiempo": "3-4 semanas"
     },
     {
         "id": 5,
         "nombre": "Mesa Comedor Pampa",
         "descripcion": "Descripción del Producto B",
         "precio": 150.0,
-        "stock": 30
+        "stock": 30,
+        "imagen": "https://nachzzz.github.io/img_ecommerce/mesaComedorPampa.png",
+        "valoracion": 5,
+        "tipo": "Mesa",
+        "material": "Madera FSC",
+        "medidas": "160 × 90 × 75 cm",
+        "tiempo": "2-3 semanas"
     },
     {
         "id": 6,
         "nombre": "Mesa de Centro Araucaria",
         "descripcion": "Descripción del Producto C",
         "precio": 200.0,
-        "stock": 20
+        "stock": 20,
+        "imagen": "https://nachzzz.github.io/img_ecommerce/mesaDeCentroAraucaria.png",
+        "valoracion": 4,
+        "tipo": "Mesa",
+        "material": "Madera FSC",
+        "medidas": "120 × 80 × 40 cm",
+        "tiempo": "2-3 semanas"
     },
     {
         "id": 7,
-        "nombre": "",
+        "nombre": "Mesa de Noche Aconcagua",
         "descripcion": "Descripción del Producto A",
         "precio": 100.0,
-        "stock": 50
+        "stock": 50,
+        "imagen": "https://nachzzz.github.io/img_ecommerce/mesaDeNocheAconcagua.png",
+        "valoracion": 3,
+        "tipo": "Mesa",
+        "material": "Madera FSC",
+        "medidas": "50 × 40 × 40 cm",
+        "tiempo": "2-3 semanas"
     },
     {
         "id": 8,
-        "nombre": "Producto B",
+        "nombre": "Silla de Trabajo Belgrano",
         "descripcion": "Descripción del Producto B",
         "precio": 150.0,
-        "stock": 30
+        "stock": 30,
+        "imagen": "https://nachzzz.github.io/img_ecommerce/sillaDeTrabajoBelgrano.png",
+        "valoracion": 5,
+        "tipo": "Silla",
+        "material": "Madera FSC",
+        "medidas": "60 × 60 × 90 cm",
+        "tiempo": "2-3 semanas"
     },
     {
         "id": 9,
-        "nombre": "Producto C",
+        "nombre": "Sillas Cordoba",
         "descripcion": "Descripción del Producto C",
         "precio": 200.0,
-        "stock": 20
+        "stock": 20,
+        "imagen": "https://nachzzz.github.io/img_ecommerce/sillasCordoba.png",
+        "valoracion": 4,
+        "tipo": "Silla",
+        "material": "Madera FSC",
+        "medidas": "45 × 45 × 90 cm",
+        "tiempo": "2-3 semanas"
     },
     {
         "id": 10,
-        "nombre": "Producto A",
+        "nombre": "Sillón Copacabana",
         "descripcion": "Descripción del Producto A",
         "precio": 100.0,
-        "stock": 50
+        "stock": 50,
+        "imagen": "https://nachzzz.github.io/img_ecommerce/sillonCopacabana.png",
+        "valoracion": 5,
+        "tipo": "Sillón",
+        "material": "Madera FSC",
+        "medidas": "80 × 90 × 100 cm",
+        "tiempo": "2-3 semanas"
+    },
+    {
+        "id": 10,
+        "nombre": "Sofá Patagonia",
+        "descripcion": "Descripción del Producto A",
+        "precio": 100.0,
+        "stock": 50,
+        "imagen": "https://nachzzz.github.io/img_ecommerce/sofaPatagonia.png",
+        "valoracion": 4,
+        "tipo": "Sofá",
+        "material": "Madera FSC + Lino",
+        "medidas": "200 × 90 × 85 cm",
+        "tiempo": "3-4 semanas"
     }
 ]

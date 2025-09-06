@@ -10,13 +10,21 @@
 
 <body>
     <header>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <nav>
+            <!-- Logo -->
             <div class="logo">
-                <img src="assets/img/logo.svg" alt="Logo Mueblería Jota Hnos" href="index.html">
+                <a href="index.html">
+                    <img src="assets/img/logo.svg" alt="Logo Mueblería Jota Hnos">
+                </a>
             </div>
-            <ul class="nav-links">
 
+            <!-- Botón hamburguesa -->
+            <button class="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+
+            <!-- Links -->
+            <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -24,7 +32,8 @@
                 <li>
                     <button class="carrito">
                         <img src="assets/img/carrito.svg" alt="carrito">
-                        <a href="#">Carrito</a>
+                        <span class="contador-carrito" id="contador-carrito">0</span>
+                        <a href="carrito.html">Carrito</a>
                     </button>
                 </li>
             </ul>
@@ -56,116 +65,16 @@
 
             <div class="coleccion1">
                 <button class="btn-coleccion">Todos</button>
-                <button class="btn-coleccion">Estanterias</button>
-                <button class="btn-coleccion">Sofas</button>
-                <button class="btn-coleccion">Mesas</button>
+                <button class="btn-coleccion">Sillón</button>
+                <button class="btn-coleccion">Sofá</button>
+                <button class="btn-coleccion">Mesa</button>
             </div>
         </div>
 
         <!--    La información de los productos se cargará desde un archivo JavaScript local.  -->
-        <div class="placas-container1">
-            <section class="placa">
-                <p>4.9</p>
-                <img src="assets/img/img2.png" alt="Placa 5">
-                <h2>Aparador Uspallata</h2>
-                <p>Descripción de la placa 1.</p>
-                <h3>$125.000</h3>
-                <a href="#" class="btn">Ver Detalles</a>
-            </section>
-
-            <section class="placa">
-                <p>4.9</p>
-                <img src="assets/img/img3.png" alt="Placa 5">
-                <h2>Biblioteca Recoleta</h2>
-                <p>Descripción de la placa 1.</p>
-                <h3>$125.000</h3>
-                <a href="#" class="btn">Ver Detalles</a>
-            </section>
-
-            <section class="placa">
-                <p>4.9</p>
-                <img src="assets/img/img10.png" alt="Placa 5">
-                <h2>Sillón Copacabana</h2>
-                <p>Descripción de la placa 1.</p>
-                <h3>$125.000</h3>
-                <a href="#" class="btn">Ver Detalles</a>
-            </section>
-
-            <section class="placa">
-                <p>4.9</p>
-                <img src="assets/img/img6.png" alt="Placa 5">
-                <h2>Mesa de Centro Araucaria</h2>
-                <p>Descripción de la placa 1.</p>
-                <h3>$125.000</h3>
-                <a href="#" class="btn">Ver Detalles</a>
-            </section>
-
-            <section class="placa">
-                <p>4.9</p>
-                <img src="assets/img/img7.png" alt="Placa 5">
-                <h2>Mesa de Noche Aconcagua</h2>
-                <p>Descripción de la placa 1.</p>
-                <h3>$125.000</h3>
-                <a href="#" class="btn">Ver Detalles</a>
-            </section>
-
-            <section class="placa">
-                <p>4.9</p>
-                <img src="assets/img/img5.png" alt="Placa 5">
-                <h2>Cama Neuquén</h2>
-                <p>Descripción de la placa 1.</p>
-                <h3>$125.000</h3>
-                <a href="#" class="btn">Ver Detalles</a>
-            </section>
-
-            <section class="placa">
-                <p>4.9</p>
-                <img src="assets/img/img11.png" alt="Placa 5">
-                <h2>Sofá Patagonia</h2>
-                <p>Descripción de la placa 1.</p>
-                <h3>$125.000</h3>
-                <a href="#" class="btn">Ver Detalles</a>
-            </section>
-
-            <section class="placa">
-                <p>4.9</p>
-                <img src="assets/img/img1.png" alt="Placa 5">
-                <h2>Mesa Comedor Pampa</h2>
-                <p>Descripción de la placa 1.</p>
-                <h3>$125.000</h3>
-                <a href="#" class="btn">Ver Detalles</a>
-            </section>
-
-            <section class="placa">
-                <p>4.9</p>
-                <img src="assets/img/img9.png" alt="Placa 5">
-                <h2>Sillas Córdoba</h2>
-                <p>Descripción de la placa 1.</p>
-                <h3>$125.000</h3>
-                <a href="#" class="btn">Ver Detalles</a>
-            </section>
-
-            <section class="placa">
-                <p>4.9</p>
-                <img src="assets/img/img4.png" alt="Placa 5">
-                <h2>Escritorio Costa</h2>
-                <p>Descripción de la placa 1.</p>
-                <h3>$125.000</h3>
-                <a href="#" class="btn">Ver Detalles</a>
-            </section>
-
-            <section class="placa">
-                <p>4.9</p>
-                <img src="assets/img/img8.png" alt="Placa 5">
-                <h2>Silla de Trabajo Belgrano</h2>
-                <p>Descripción de la placa 1.</p>
-                <h3>$125.000</h3>
-                <a href="#" class="btn">Ver Detalles</a>
-            </section>
-
-            <section class="tarjeta"></section>
-        </div>
+        <div id="catalogo" class="placas-container1"></div>
     </main>
+
 
     <footer>
         <div class="footer-content">
@@ -223,6 +132,7 @@
                 <p>Creado con ❤ por Grupo 4</p>
             </div>
     </footer>
+    <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

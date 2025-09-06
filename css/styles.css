@@ -51,16 +51,89 @@ h2 {
 
 
 .placa {
-    width: 100%;
-    max-width: 320px;
+    background: #ffffff7e;
+    border-radius: 10px;
+    border: 1px solid #a0512d7e;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    margin: 0 auto;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
 }
 
 .placa img {
-    height: 160px;
-    border: 1px solid #C47A6D;
+    max-width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.placa h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    margin: 8px 0 4px 0;
+}
+
+.placa h3 {
+    font-size: 20px;
+    color: var(--brand-siena-tostado);
+    margin: 4px 0;
+}
+
+.placa .descripcion {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.placa .descuento {
+    font-size: 13px;
+    color: var(--brand-rosa-polvoriento);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.placa .valoracion {
+    font-size: 14px;
+    color: #f5a623; 
+    margin-bottom: 8px;
+}
+
+.placa a.btn-carrito {
+    margin: 6px 0;
+    padding: 8px 12px;
+    background-color: var(--brand-rosa-polvoriento) !important; /* Color diferente */
+    color: #fff !important;
+    border: none !important;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+.placa a.btn-carrito:hover {
+    background-color: var(--brand-verde-salvia) !important; /* Hover distinto */
+}
+
+.placa .btn-coleccion.producto {
+    margin: 6px 0;
+    padding: 8px 12px;
+    background: var(--brand-siena-tostado);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background 0.2s;
 }
 
 .coleccion {
@@ -70,6 +143,9 @@ h2 {
     height: 16rem;
 }
 
+.placa .btn-coleccion.producto:hover {
+    background: var(--brand-rosa-polvoriento);
+}
 
 .placa1 {
 
@@ -93,13 +169,20 @@ h2 {
     margin: 0 auto;
     padding: 40px;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
 
 }
 
 .placa:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
     box-shadow: 2px 2px 20px #1f1f1c;
+}
 
+.coleccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
 }
 
 @media (max-width: 600px) {
@@ -308,23 +391,22 @@ h2 {
 }
 
 .buscar-product {
-    background-color: #f3f2f2;
+    padding-left:9px;
+    background-color: white;
     border-radius: 10px;
-    border: 2px solid #A0522D;
+    border: #a0512d7e 1px solid;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);;
+    
 }
 
 .buscador {
-    padding: 8px;
-    background-color: #9e5b3c;
+    padding: 5px;
+    background-color: #a0512d9f;
     width: 400px;
     border-radius: 10px;
-
-
     margin: 10px;
-
     display: flex;
     flex-direction: row-reverse;
-
 }
 
 .buscador input::placeholder {
@@ -332,17 +414,18 @@ h2 {
 }
 
 .buscador input {
-
+    font-family: var(--font-sans);
     flex: 1;
     border: none;
     padding: 5px 10px;
     font-size: 16px;
     outline: none;
-    background-color: #9e5b3c;
+    background-color: #a0512d00;
 
 }
 
 .buscador button {
+ 
     background: transparent;
     /* sin fondo */
     border: none;
@@ -359,9 +442,20 @@ h2 {
 
 }
 
+@media (max-width: 600px) {
+  /* Hero Banner */
+  .titulo-product {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 12px;
+  }
+}
+
 
 .coleccion1 {
-
+    
+    margin: 9px;
     display: flex;
     gap: 1rem;
     padding: 2px;
@@ -374,6 +468,13 @@ h2 {
 }
 
 /*camila*/
+.btn-coleccion.producto{
+    padding: 2px 5px;
+    margin: 6px;
+    text-decoration: none;
+}
+
+
 
 .btn-coleccion {
 
@@ -561,6 +662,7 @@ nav {
 }
 
 .carrito {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -606,6 +708,7 @@ nav {
     color: #fff;
 }
 
+
 /* Botón hamburguesa */
 .menu-toggle {
     background: none;
@@ -628,8 +731,8 @@ nav {
     padding: 2px 6px;
     border-radius: 12px;
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: -12px;
+    right: 0px;
     display: none; /* Oculto por defecto */
 }
 
@@ -1328,5 +1431,60 @@ footer {
 
     .valores-header {
         padding: 4pc;
+    }
+}
+
+.valoracion-estrellas {
+    margin-bottom: 6px;
+    font-size: 18px;
+    color: #D4A437;
+}
+.estrella {
+    margin-right: 2px;
+}
+
+/* Responsive para contenedores de productos */
+@media (max-width: 900px) {
+    .placas-container,
+    .placas-container1 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 24px !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 500px !important; /* Cambiado para que no sean tan anchos */
+        margin: 0 auto !important;
+        padding: 0 8px !important;
+    }
+
+    .placa {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 350px !important;
+        margin: 0 auto !important;
+        padding: 24px !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        align-items: center !important;
+    }
+
+    .placa img {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 12px !important;
+    }
+}
+
+/* Extra para pantallas muy pequeñas */
+@media (max-width: 600px) {
+    .placas-container,
+    .placas-container1 {
+        gap: 4pc !important;
+        padding: 4pc 0 !important;
+        max-width: 100% !important; /* Ocupa todo el ancho en mobile */
+    }
+    .placa {
+        max-width: 100% !important;
+        padding: 16px !important;
     }
 }
