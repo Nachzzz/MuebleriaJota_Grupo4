@@ -995,6 +995,12 @@ footer {
     transform: translateX(-50%);
 }
 
+.footer-content .logo p {
+    max-width: 220px; 
+    margin-top: 12px; 
+    line-height: 1.4; 
+}
+
 .enlaces h3 {
     color: white;
     font-size: 17px;
@@ -1434,6 +1440,23 @@ footer {
     cursor: pointer;
 }
 
+#agregar-carrito {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem auto 0 auto; 
+    border: none;
+    border-radius: 8px;
+    background: #A0522D;
+    color: #fff;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+#agregar-carrito:hover {
+    transform: scale(1.02);  /* crece un poquito */
+}
 
 /* ====== Responsive Nosotros ====== */
 @media (max-width: 600px) {
