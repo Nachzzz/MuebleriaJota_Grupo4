@@ -115,7 +115,7 @@ function agregarAlCarrito(producto) {
     carrito.push(producto);
     localStorage.setItem("carrito", JSON.stringify(carrito));
     actualizarContadorCarrito();
-    mostrarMensajeCarrito("Producto agregado al carrito", "exito");
+    mostrarMensajeCarrito("Producto agregado al carrito ✅", "exito");
 }
 
 export function actualizarContadorCarrito() {
