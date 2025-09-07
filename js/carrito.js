@@ -85,8 +85,12 @@ export function renderizarCarrito() {
  });
     
 
-    actualizarResumen(carrito.length, carrito.reduce((acc, p) => acc + p.precio * (p.cantidad ?? 1), 0));
+    actualizarResumen(
+        carrito.length,
+        carrito.reduce((acc, p) => acc + p.precio * (p.cantidad ?? 1), 0)
+    );
 }
+
 
 export function vaciarCarrito() {
     localStorage.removeItem("carrito");
