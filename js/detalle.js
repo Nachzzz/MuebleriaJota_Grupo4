@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (producto) {
         contenedor.innerHTML = `
             <h2>${producto.nombre}</h2>
-            <img src="${producto.imagen}" alt="${producto.nombre}" style="max-width:250px; display:block; margin-bottom:1rem;">
+            <img src="${producto.imagen}" alt="${producto.nombre}" class="detalle-imagen">
             <div class="valoracion-estrellas">${crearEstrellas(producto.valoracion || 5)}</div>
             <p class="descripcion">${producto.descripcion}</p>
             <p><strong>Precio:</strong> $${producto.precio}</p>

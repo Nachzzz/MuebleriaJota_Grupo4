@@ -1374,6 +1374,66 @@ footer {
     color: var(--brand-verde-salvia);
 }
 
+/* Contenedor del detalle */
+#detalle {
+    width: 85%;               
+    max-width: 600px;       
+    margin: 2rem auto;        
+    padding: 1rem 1.5rem;     
+    border: 1px solid #eee;
+    border-radius: 10px;     
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;   
+}
+
+#detalle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.detalle-imagen {
+    max-width: 80%;   
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto; 
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    object-fit: contain;      
+}
+
+
+#detalle h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.valoracion-estrellas {
+    font-size: 1.5rem;
+    color: #f5a623;
+    margin-bottom: 1rem;
+}
+
+#detalle p {
+    margin: 0.5rem 0;
+    line-height: 1.4;
+}
+
+#volver {
+    display: inline-block;
+    padding: 0.5rem 1rem; 
+    margin-top: 1rem;  
+    border: none;
+    border-radius: 8px;
+    background: #A0522D;
+    color: #fff;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
 
 /* ====== Responsive Nosotros ====== */
 @media (max-width: 600px) {
