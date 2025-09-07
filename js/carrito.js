@@ -68,25 +68,28 @@ export function renderizarCarrito() {
         });
     });
 
-    // Eliminar producto
-    contenedor.querySelectorAll(".eliminar-btn").forEach(btn => {
-    btn.addEventListener("click", e => {
-        const id = btn.dataset.id;
-        const index = carrito.findIndex(p => p.id == id);
-        if (index !== -1) {
-            carrito[index].cantidad -= 1; 
-            if (carrito[index].cantidad <= 0) {
-                carrito.splice(index, 1);
+    // Delegación para botones de eliminar
+    contenedor.onclick = (e) => {
+        if (e.target.classList.contains("eliminar-btn")) {
+            const id = e.target.dataset.id;
+            const index = carrito.findIndex(p => p.id == id);
+            if (index !== -1) {
+                carrito[index].cantidad -= 1;
+                if (carrito[index].cantidad <= 0) {
+                    carrito.splice(index, 1);
+                }
             }
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+            renderizarCarrito();
         }
-        localStorage.setItem("carrito", JSON.stringify(carrito));
-        renderizarCarrito();
-    });
- });
-    
+    };
 
-    actualizarResumen(carrito.length, carrito.reduce((acc, p) => acc + p.precio * (p.cantidad ?? 1), 0));
+    actualizarResumen(
+        carrito.length,
+        carrito.reduce((acc, p) => acc + p.precio * (p.cantidad ?? 1), 0)
+    );
 }
+
 
 export function vaciarCarrito() {
     localStorage.removeItem("carrito");
