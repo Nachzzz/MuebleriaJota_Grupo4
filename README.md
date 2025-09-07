@@ -1,9 +1,9 @@
-# Mueblería Jota Hnos
+# Mueblería Jota Hnos 🪑
 
 Proyecto web para la presentación de la colección actual de Mueblería Jota Hermanos, destacando productos, valores y diseño sustentable.
 
 
-## Estructura de Carpetas
+## Estructura de Carpetas 📁
 
 ```
 Muebleria Jota Grupo 4/
@@ -19,7 +19,7 @@ Muebleria Jota Grupo 4/
 └── js/
 ```
 
-## Características
+## Características 📑
 
 - Catálogo de productos con imágenes, descripción y precios.
 - Diseño responsive y moderno.
@@ -27,15 +27,18 @@ Muebleria Jota Grupo 4/
 - Sección de valores con íconos y descripciones.
 - Botones interactivos y accesibles.
 
-## Instalación
-
-## Tecnologías
+## Tecnologías 👨‍💻
 
 - HTML
 - CSS
 - JavaScript
 
 
-## Créditos
+## Créditos 📜
+- Camila Selene Varela
+- Suarez Gatica Agustina
+- Salto Jorge Ignacio
+- Sanabria Micaela Belen
+- Sosa Franco
 
 Grupo 4 - Proyecto Mueblería Jota Hnos
