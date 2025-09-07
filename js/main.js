@@ -1,7 +1,6 @@
 import { cargarCatalogo, cargarDestacados, actualizarContadorCarrito } from "./catalogo.js";
 import { initContactoForm } from "./contacto.js";
 import { initMenuToggle } from "./navbar.js";
-import "./detalle.js";
 import { renderizarCarrito, vaciarCarrito } from "./carrito.js";
 
 document.addEventListener("DOMContentLoaded", () => {
