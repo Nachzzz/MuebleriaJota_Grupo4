@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ${producto.material ? `<p><strong>Material:</strong> ${producto.material}</p>` : ""}
             ${producto.medidas ? `<p><strong>Medidas:</strong> ${producto.medidas}</p>` : ""}
             <button id="volver">Volver</button>
+            <button id="agregar-carrito">Agregar al carrito</button>
         `;
 
         document.querySelector("#volver").addEventListener("click", () => {
