@@ -1,4 +1,4 @@
-import { detalleProducto } from "./detalle.js"
+import { detalleProducto } from "./detalle.js";
 
 function crearEstrellas(valor = 5) {
     const max = 5;
