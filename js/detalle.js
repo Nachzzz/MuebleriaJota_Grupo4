@@ -76,11 +76,12 @@ document.addEventListener("DOMContentLoaded", () => {
             <h2>${producto.nombre}</h2>
             <img src="${producto.imagen}" alt="${producto.nombre}" class="detalle-imagen">
             <div class="valoracion-estrellas">${crearEstrellas(producto.valoracion || 5)}</div>
-            <p class="descripcion">${producto.descripcion}</p>
+            <p class="descripcion">${producto.descripcion1}</p>
             <p><strong>Precio:</strong> $${producto.precio}</p>
             <p><strong>Stock:</strong> ${producto.stock ?? "No disponible"}</p>
             ${producto.material ? `<p><strong>Material:</strong> ${producto.material}</p>` : ""}
             ${producto.medidas ? `<p><strong>Medidas:</strong> ${producto.medidas}</p>` : ""}
+            ${producto.acabado ? `<p><strong>Acabado:</strong> ${producto.acabado}</p>` : ""}
             <button id="volver">⬅ Volver</button>
             <button id="agregar-carrito">🛒 Agregar al carrito</button>
         `;
