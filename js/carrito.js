@@ -70,13 +70,19 @@ export function renderizarCarrito() {
 
     // Eliminar producto
     contenedor.querySelectorAll(".eliminar-btn").forEach(btn => {
-        btn.addEventListener("click", e => {
-            const id = btn.dataset.id;
-            let nuevoCarrito = carrito.filter(p => p.id != id);
-            localStorage.setItem("carrito", JSON.stringify(nuevoCarrito));
-            renderizarCarrito();
-        });
+    btn.addEventListener("click", e => {
+        const id = btn.dataset.id;
+        const index = carrito.findIndex(p => p.id == id);
+        if (index !== -1) {
+            carrito[index].cantidad -= 1; 
+            if (carrito[index].cantidad <= 0) {
+                carrito.splice(index, 1);
+            }
+        }
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        renderizarCarrito();
     });
+ });
     
 
     actualizarResumen(carrito.length, carrito.reduce((acc, p) => acc + p.precio * (p.cantidad ?? 1), 0));
